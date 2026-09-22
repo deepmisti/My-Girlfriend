@@ -1,11 +1,11 @@
 package com.example.mygirlfriend
 
+import android.app.Activity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
-import androidx.appcompat.app.AppCompatActivity
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : Activity() {
 
     private val messages = listOf(
         "You make every single day brighter! ✨",
