@@ -48,9 +48,13 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
     implementation("androidx.activity:activity-compose:1.8.2")
 
-    // Compose dependencies
-    implementation("androidx.compose.ui:ui:1.6.2")
-    implementation("androidx.compose.ui:ui-graphics:1.6.2")
-    implementation("androidx.compose.ui:ui-tooling-preview:1.6.2")
-    implementation("androidx.compose.material3:material3:1.2.0")
+    // Compose BOM
+    val composeBom = platform("androidx.compose:compose-bom:2024.02.01")
+    implementation(composeBom)
+    androidTestImplementation(composeBom)
+
+    implementation("androidx.compose.ui:ui")
+    implementation("androidx.compose.ui:ui-graphics")
+    implementation("androidx.compose.ui:ui-tooling-preview")
+    implementation("androidx.compose.material3:material3")
 }
